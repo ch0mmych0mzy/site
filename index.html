@@ -3,21 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>U.S. Startup Incorporation — 50% Off</title>
+  <title>Startup Incorporation - 50% Off</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f7f9fc;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
     header {
       background-color: #4F46E5;
-      color: #fff;
+      color: white;
       padding: 20px;
       text-align: center;
     }
@@ -28,7 +26,7 @@
       margin-top: 10px;
     }
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
       font-weight: 600;
     }
@@ -45,100 +43,97 @@
       font-size: 1.2rem;
       margin-bottom: 30px;
     }
-    .cta-button {
+    .cta-btn {
       background-color: #4F46E5;
-      color: #fff;
+      color: white;
       padding: 15px 30px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      cursor: pointer;
       text-decoration: none;
+      font-weight: 600;
+      border-radius: 5px;
     }
-    .section {
+    .features, .testimonials, .pricing {
       padding: 60px 20px;
       text-align: center;
     }
-    .section h2 {
+    .features h2, .testimonials h2, .pricing h2 {
       font-size: 2rem;
       margin-bottom: 20px;
     }
-    .section p {
-      font-size: 1.1rem;
-      max-width: 800px;
-      margin: 0 auto;
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
-    .testimonials {
-      background-color: #fff;
-      padding: 60px 20px;
-      text-align: center;
+    .feature-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 250px;
     }
     .testimonial {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       max-width: 600px;
-      margin: 20px auto;
-      font-style: italic;
+      margin: 0 auto;
     }
     footer {
       background-color: #4F46E5;
-      color: #fff;
+      color: white;
       text-align: center;
       padding: 20px;
-      margin-top: auto;
     }
-    footer p {
-      margin: 0;
+    @media (max-width: 768px) {
+      .feature-list {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>U.S. Startup Incorporation — 50% Off</h1>
+    <h1>Startup Incorporation Service</h1>
     <nav>
-      <a href="#about">About</a>
       <a href="#features">Features</a>
       <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
+      <a href="#pricing">Pricing</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Incorporate Your U.S. Startup for Just $250</h1>
-    <p>Form your Delaware C-Corp or LLC with expert guidance — all at half the usual price.</p>
-    <a href="#contact" class="cta-button">Get Started Now</a>
+    <h1>Incorporate Your U.S. Startup for 50% Less</h1>
+    <p>Form your U.S. company seamlessly for just $250 — including EIN, 83(b), and more.</p>
+    <a href="#pricing" class="cta-btn">Get Started Now</a>
   </section>
 
-  <section id="about" class="section">
-    <h2>Why Choose Us?</h2>
-    <p>We simplify U.S. startup incorporation. Get your business legally set up, receive an EIN, file your 83(b) election, and access exclusive startup perks — all for just $250.</p>
-  </section>
-
-  <section id="features" class="section">
-    <h2>What’s Included?</h2>
-    <p>✅ Delaware C-Corp or LLC formation<br>
-       ✅ EIN (Tax ID) setup<br>
-       ✅ 83(b) election filing<br>
-       ✅ Equity split & founder agreements<br>
-       ✅ Open U.S. bank accounts (Mercury, Brex, Novo)<br>
-       ✅ Over $50K in founder perks & Stripe discounts
-    </p>
-  </section>
-
-  <section id="testimonials" class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-      <p>“This service made incorporating my startup a breeze. Saved time, money, and hassle!”</p>
-      <strong>- Alex R., Founder</strong>
-    </div>
-    <div class="testimonial">
-      <p>“I was amazed at how simple the process was. Highly recommend for any early-stage founder.”</p>
-      <strong>- Sam T., Entrepreneur</strong>
+  <section class="features" id="features">
+    <h2>What’s Included</h2>
+    <div class="feature-list">
+      <div class="feature-item">✅ Delaware C-Corp or LLC Incorporation</div>
+      <div class="feature-item">✅ EIN (Tax ID) Setup</div>
+      <div class="feature-item">✅ 83(b) Election Filing</div>
+      <div class="feature-item">✅ Equity Split & Founder Agreements</div>
+      <div class="feature-item">✅ Open U.S. Bank Accounts</div>
+      <div class="feature-item">✅ $50K+ in Founder Perks</div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Ready to Incorporate?</h2>
-    <p>Get started today and save 50% on your U.S. startup incorporation.</p>
-    <a href="#" class="cta-button">Start Now for $250</a>
+  <section class="testimonials" id="testimonials">
+    <h2>What Founders Say</h2>
+    <div class="testimonial">
+      <p>"Incorporating through this service was seamless and cost-effective. Highly recommend!"</p>
+      <strong>- Alex R., SaaS Founder</strong>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Incorporate Now for Just $250</h2>
+    <p>Limited-time offer — start your U.S. company today at half the usual cost.</p>
+    <a href="#" class="cta-btn">Incorporate for $250</a>
   </section>
 
   <footer>
